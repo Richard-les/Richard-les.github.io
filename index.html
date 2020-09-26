@@ -66,6 +66,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-animation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/09/26/animation/" class="article-date">
+  <time datetime="2020-09-26T03:35:44.000Z" itemprop="datePublished">2020-09-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/09/26/animation/">animation</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="animation做时钟的使用"><a href="#animation做时钟的使用" class="headerlink" title="animation做时钟的使用"></a>animation做时钟的使用</h1><p><strong>经过使用javascript做出最简单的电子时钟，我进行了下一步尝试–指针时钟，说来简单，实则困难，首先表盘的制作与设计就比较困难，我最终选择先添加一个有边框的圆加上6条均匀穿过圆的直线，在里层再覆盖一个白色圆，这样刻度就可以被标出来，然后中心添加黑点附带指针就好，其中为了图片的平移，transform、translate指令自然不可少，正百分率代表向右与向下。</strong></p>
+<p><strong>接下来就是重头戏了，使用animation让表转起来，首先使用animation自然要先明确关键帧的存在与命名，将每个需要运动的属性中加入animation指令开头明确名称，这里我用了duration、timing-function以及iteration-count来修饰每个动画。</strong></p>
+<p><strong>钟表与电子时钟最大的不同在于钟表的指针，为了使指针形象，我在js中的if语句就得改善，为了使时针不呢么死板，我加入了math.floor（）属性来使时针转动更逼真，其中添加的函数则是以分针为基础的。</strong></p>
+<p><strong>但我在制作中也碰到了些困难，当我用js获取本地时间后，我原本的animation动画使我的表盘无法从本地时间运行，只能从零点运行，经过Google与多次尝试，我发现给animation添加注释块就能正常运转，但注释块无意义，我的钟表依然能正常运动，我也很迷惑，希望学长学姐帮我康康，看是哪里的问题</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://richard-les.github.io./2020/09/26/animation/" data-id="ckfj6d5sl0000d4hwe1fj3wax" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-javascript" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/09/20/javascript/" class="article-date">
@@ -266,6 +306,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/09/26/animation/">animation</a>
+          </li>
         
           <li>
             <a href="/2020/09/20/javascript/">javascript</a>
